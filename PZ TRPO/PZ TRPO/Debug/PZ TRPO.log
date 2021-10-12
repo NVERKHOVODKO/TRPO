@@ -1,0 +1,6 @@
+﻿  PZ TRPO.cpp
+D:\БГУИР\TRPO\PZ TRPO\PZ TRPO\PZ TRPO.cpp(7,1): warning C4005: RAND_MAX: изменение макроопределения
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\stdlib.h(348): message : см. предыдущее определение "RAND_MAX"
+D:\БГУИР\TRPO\PZ TRPO\PZ TRPO\PZ TRPO.cpp(12,25): warning C4101: counterleight: неиспользованная локальная переменная
+D:\БГУИР\TRPO\PZ TRPO\PZ TRPO\PZ TRPO.cpp(12,40): warning C4101: counterHeight: неиспользованная локальная переменная
+  PZ TRPO.vcxproj -> D:\БГУИР\TRPO\PZ TRPO\Debug\PZ TRPO.exe
