@@ -128,11 +128,22 @@ void zadanie4()
     } while(number < 0 || number > 100000000);//why for large(999999999999999999999999) numbers the error?!?!
     if (number == 0)
         cout << "0";
-    while (number >= 1)
+    else
     {
-        oneSymbol = number % 2;
-        number = number / 2;
-        cout << oneSymbol;
+        int size, i = 0;
+        int* array = new int[number];
+        while (number >= 1)
+        {
+            oneSymbol = number % 2;
+            number = number / 2;
+            array[i] = oneSymbol;
+            i++;
+        }
+
+        for (int j = i - 1; j > 0; j--)
+        {
+            cout << array[j];
+        }
     }
     cout << "\nTask 4 is completed\n";
 }
