@@ -4,6 +4,7 @@
 #include <cassert>
 #include <stdlib.h>
 #include <math.h>
+#include <random>
 #define RAND_MAX 32767 
 using namespace std;
 
@@ -108,7 +109,7 @@ void zadanie3()
             secondNumber = secondNumber % firstNumber;
         }
     }
-    while(firstNumber != 0 && secondNumber != 0)
+    while (firstNumber != 0 && secondNumber != 0)
     {
         if (firstNumber > secondNumber)
             firstNumber %= secondNumber;
@@ -146,39 +147,25 @@ void zadanie4()
         cout << 0;
     cout << "\nTask 4 is completed\n";
 }
-//If I cannot use random I will make my own.
+//If I cannot use rand() I will make my own.
 //                           Nikita Verkhovodko                        
-struct PRNG
-{
-    unsigned seed = 0;
-};
-
-void initGenerator(PRNG& generator)
-{
-    generator.seed = unsigned(std::time(nullptr));
-}
-
-unsigned random(PRNG& generator, unsigned minValue, unsigned maxValue)
-{
-    assert(minValue < maxValue);
-    generator.seed = (generator.seed * 73129 + 95121);
-    return (generator.seed % (maxValue + 1 - minValue)) + minValue;
-}
 
 void zadanie5()
 {
-    PRNG generator;
-    initGenerator(generator);  
     int SIZE;
     do {
         cout << "How many numbers generate(1 - 100000): ";
         cin >> SIZE;
     } while (SIZE > 100000 || SIZE < 1);
     int array[100000];
-    int num[10]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+    int num[10]{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+    srand(time(0));
     for (int i = 0; i < SIZE; i++)
     {
-        array[i] = random(generator, 1, 10);
+        random_device rd;
+        mt19937 gen(rd());
+        int randomNumber = gen() % 11;
+        array[i] = randomNumber;
         cout << array[i] << " ";
         switch (array[i])
         {
@@ -216,7 +203,7 @@ void zadanie5()
     }
     for (int counter = 0; counter < 10; counter++)
     {
-        cout << "\n-" << counter + 1  << "-";
+        cout << "\n-" << counter + 1 << "-";
         for (int num0 = 0; num[counter] * 100 / SIZE > num0; num0++)
         {
             cout << "X";
@@ -230,7 +217,7 @@ int main()
     int toggle;
     while (true) {
         do {
-            cout <<"________________________________________________________________________________________________________________________\n" << 
+            cout << "________________________________________________________________________________________________________________________\n" <<
                 "Enter a task number(1-5) " << "\nTo exit press 0\n" << "Your choise: ";
             cin >> toggle;
         } while (toggle > 5 || toggle < 0);

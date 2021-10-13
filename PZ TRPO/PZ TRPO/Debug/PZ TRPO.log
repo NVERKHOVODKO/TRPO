@@ -1,7 +1,8 @@
 ﻿  PZ TRPO.cpp
-D:\БГУИР\TRPO_Basic_Repository\PZ TRPO\PZ TRPO\PZ TRPO.cpp(7,1): warning C4005: RAND_MAX: изменение макроопределения
+D:\БГУИР\TRPO_Basic_Repository\PZ TRPO\PZ TRPO\PZ TRPO.cpp(8,1): warning C4005: RAND_MAX: изменение макроопределения
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\stdlib.h(348): message : см. предыдущее определение "RAND_MAX"
-D:\БГУИР\TRPO_Basic_Repository\PZ TRPO\PZ TRPO\PZ TRPO.cpp(12,25): warning C4101: counterleight: неиспользованная локальная переменная
-D:\БГУИР\TRPO_Basic_Repository\PZ TRPO\PZ TRPO\PZ TRPO.cpp(12,40): warning C4101: counterHeight: неиспользованная локальная переменная
-D:\БГУИР\TRPO_Basic_Repository\PZ TRPO\PZ TRPO\PZ TRPO.cpp(125,9): warning C4101: size: неиспользованная локальная переменная
+D:\БГУИР\TRPO_Basic_Repository\PZ TRPO\PZ TRPO\PZ TRPO.cpp(13,25): warning C4101: counterleight: неиспользованная локальная переменная
+D:\БГУИР\TRPO_Basic_Repository\PZ TRPO\PZ TRPO\PZ TRPO.cpp(13,40): warning C4101: counterHeight: неиспользованная локальная переменная
+D:\БГУИР\TRPO_Basic_Repository\PZ TRPO\PZ TRPO\PZ TRPO.cpp(126,9): warning C4101: size: неиспользованная локальная переменная
+D:\БГУИР\TRPO_Basic_Repository\PZ TRPO\PZ TRPO\PZ TRPO.cpp(162,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
   PZ TRPO.vcxproj -> D:\БГУИР\TRPO_Basic_Repository\PZ TRPO\Debug\PZ TRPO.exe
