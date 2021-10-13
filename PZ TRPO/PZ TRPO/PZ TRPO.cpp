@@ -122,29 +122,28 @@ void zadanie4()
 {
     unsigned long number;
     short oneSymbol;
+    int size, i = 0;
     do {
         cout << "Enter a number(0-100000000): ";
         cin >> number;
-    } while(number < 0 || number > 100000000);//why for large(999999999999999999999999) numbers the error?!?!
-    if (number == 0)
-        cout << "0";
-    else
+    } while (number < 0 || number > 100000000);//why for large(999999999999999999999999) numbers the error?!?!
+    int numberForSimbol = number;
+    int* array = new int[number];
+    while (number >= 1)
     {
-        int size, i = 0;
-        int* array = new int[number];
-        while (number >= 1)
-        {
-            oneSymbol = number % 2;
-            number = number / 2;
-            array[i] = oneSymbol;
-            i++;
-        }
-
-        for (int j = i - 1; j > 0; j--)
-        {
-            cout << array[j];
-        }
+        oneSymbol = number % 2;
+        number = number / 2;
+        array[i] = oneSymbol;
+        i++;
     }
+    for (int j = i - 1; j > 0; j--)
+    {
+        cout << array[j];
+    }
+    if (numberForSimbol % 2)
+        cout << 1;
+    else
+        cout << 0;
     cout << "\nTask 4 is completed\n";
 }
 //If I cannot use random I will make my own.

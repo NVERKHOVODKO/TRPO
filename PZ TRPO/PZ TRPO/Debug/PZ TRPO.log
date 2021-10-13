@@ -3,5 +3,5 @@ D:\БГУИР\TRPO_Basic_Repository\PZ TRPO\PZ TRPO\PZ TRPO.cpp(7,1): warning C4
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\stdlib.h(348): message : см. предыдущее определение "RAND_MAX"
 D:\БГУИР\TRPO_Basic_Repository\PZ TRPO\PZ TRPO\PZ TRPO.cpp(12,25): warning C4101: counterleight: неиспользованная локальная переменная
 D:\БГУИР\TRPO_Basic_Repository\PZ TRPO\PZ TRPO\PZ TRPO.cpp(12,40): warning C4101: counterHeight: неиспользованная локальная переменная
-D:\БГУИР\TRPO_Basic_Repository\PZ TRPO\PZ TRPO\PZ TRPO.cpp(133,13): warning C4101: size: неиспользованная локальная переменная
+D:\БГУИР\TRPO_Basic_Repository\PZ TRPO\PZ TRPO\PZ TRPO.cpp(125,9): warning C4101: size: неиспользованная локальная переменная
   PZ TRPO.vcxproj -> D:\БГУИР\TRPO_Basic_Repository\PZ TRPO\Debug\PZ TRPO.exe
