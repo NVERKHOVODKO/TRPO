@@ -5,10 +5,12 @@
 #include <stdlib.h>
 #include <math.h>
 #include <random>
+#include <time.h>
+#include <chrono>
 #define RAND_MAX 32767 
 using namespace std;
 
-void zadanie1()
+void printRectangle()
 {
     int length, height, counterleight, counterHeight, perimetr, area;
     do {
@@ -34,7 +36,7 @@ void zadanie1()
     cout << "area = " << area << "\n\nTask 1 is completed\n";
 }
 
-void zadanie2()
+void fibonachiFact()
 {
     int number, counter, a = 0, b = 1, elementFib;
     unsigned long long factorial = 1;
@@ -58,7 +60,7 @@ void zadanie2()
     cout << "\nFactorial = " << factorial << "\nTask 2 is completed\n";
 }
 
-void zadanie3()
+void SimpleOrComposiveGCF()
 {
     int counter = 0, counterForSign1 = 0, counterForSign2 = 0, firstNumber, secondNumber;
     do {
@@ -109,17 +111,10 @@ void zadanie3()
             secondNumber = secondNumber % firstNumber;
         }
     }
-    while (firstNumber != 0 && secondNumber != 0)
-    {
-        if (firstNumber > secondNumber)
-            firstNumber %= secondNumber;
-        else
-            secondNumber %= firstNumber;
-    }
     cout << "GCF = " << firstNumber + secondNumber << "\n\nTask 3 is completed\n";
 }
 
-void zadanie4()
+void NumberSystemTranslation()
 {
     unsigned long number;
     short oneSymbol;
@@ -127,7 +122,7 @@ void zadanie4()
     do {
         cout << "Enter a number(0-100000000): ";
         cin >> number;
-    } while (number < 0 || number > 100000000);//why for large(999999999999999999999999) numbers the error?!?!
+    } while (number < 0 || number > 100000000);
     int numberForSimbol = number;
     int* array = new int[number];
     while (number >= 1)
@@ -146,11 +141,10 @@ void zadanie4()
     else
         cout << 0;
     cout << "\nTask 4 is completed\n";
-}
-//If I cannot use rand() I will make my own.
-//                           Nikita Verkhovodko                        
+}                 
 
-void zadanie5()
+
+void randomDiagram()
 {
     int SIZE;
     do {
@@ -160,12 +154,19 @@ void zadanie5()
     int array[100000];
     int num[10]{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
     srand(time(0));
+    
+
     for (int i = 0; i < SIZE; i++)
     {
-        random_device rd;
-        mt19937 gen(rd());
-        int randomNumber = gen() % 11;
-        array[i] = randomNumber;
+        //на это я потратил в общем часов 5, которые никто мне не вернет...
+        clock_t start = clock();
+        static unsigned int seed = 4541;
+        seed = (8253729 * seed + 2396403);
+        int a = seed % 32768;
+        a %= 11;
+        array[i] = a;
+        clock_t end = clock();
+        a = (int)(end - start) / CLOCKS_PER_SEC;
         cout << array[i] << " ";
         switch (array[i])
         {
@@ -228,19 +229,19 @@ int main()
             switch (toggle)
             {
             case 1:
-                zadanie1();
+                printRectangle();
                 break;
             case 2:
-                zadanie2();
+                fibonachiFact();
                 break;
             case 3:
-                zadanie3();
+                SimpleOrComposiveGCF();
                 break;
             case 4:
-                zadanie4();
+                NumberSystemTranslation();
                 break;
             case 5:
-                zadanie5();
+                randomDiagram();
                 break;
             }
         }
