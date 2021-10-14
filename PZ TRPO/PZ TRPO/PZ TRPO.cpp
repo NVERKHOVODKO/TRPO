@@ -1,12 +1,7 @@
 ﻿#include <iostream>
-#include <iostream>
 #include <ctime>
-#include <cassert>
 #include <stdlib.h>
 #include <math.h>
-#include <random>
-#include <time.h>
-#include <chrono>
 #define RAND_MAX 32767 
 using namespace std;
 
