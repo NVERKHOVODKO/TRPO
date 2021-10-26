@@ -530,27 +530,24 @@ int main()
 			toggle = inputNumber();
 		} while (toggle > 5 || toggle < 0);
 		cout << "\n";
-		if (toggle == 0)
-			return 0;
-		else
+		switch (toggle)
 		{
-			switch (toggle)
-			{
-			case 1:
-				printMatrix();
-				break;
-			case 2:
-				arrays();
-				break;
-			case 3:
-				multiplicatMatrix();
-				break;
-			case 4:
-				medianMatrixAndMinMax();
-				break;
-			default:
-				cout << "You can use only 0-4! Try again\n";
-			}
+		case 0:
+			return 0;
+		case 1:
+			printMatrix();
+			break;
+		case 2:
+			arrays();
+			break;
+		case 3:
+			multiplicatMatrix();
+			break;
+		case 4:
+			medianMatrixAndMinMax();
+			break;
+		default:
+			cout << "You can use only 0-4! Try again\n";
 		}
 	}
 	system("pause");
