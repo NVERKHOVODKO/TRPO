@@ -526,7 +526,7 @@ int main()
 		do {
 			cout << "________________________________________________________________________________________________________________________\n" <<
 				"Press key to continue(1-4)\n" << "-1- Print matrix\n" << "-2- All tasks with arrays\n" 
-				 << "-3- Multiplication matrices\n" << "-4- Matrix median\n" << "-0- Exit\n" << "Your choise: ";
+				 << "-3- Multiplication matrices\n" << "-4- Matrix median and Max Min element\n" << "-0- Exit\n" << "Your choise: ";
 			toggle = inputNumber();
 		} while (toggle > 5 || toggle < 0);
 		cout << "\n";
