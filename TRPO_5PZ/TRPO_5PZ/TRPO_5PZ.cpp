@@ -357,7 +357,7 @@ int main()
 	setlocale(LC_ALL, "rus");
 	int code, numOfItems, numberInt;
 	double numberDouble;
-	int toggle;
+	int toggle = -1;
 	while (true) {
 		do {
 			cout << "________________________________________________________________________________________________________________________\n"
@@ -374,59 +374,66 @@ int main()
 		cout << "\n";
 		if (toggle == 0)
 			return 0;
-		else
+		switch (toggle) 
 		{
-			switch (toggle)
-			{
-			case 1:
-				*do {
-					cout << "Enter a number: ";
-					numberInt = inputNumber();
-				} while (numberInt > 999999999);
-				string number = toString(numberInt);
-				cout << number << "\n";
-				break;
-			case 2:
+		case 1:
+		{
+			do {
 				cout << "Enter a number: ";
-				cin >> numberDouble;
-				int intPartOfNumber = numberDouble;
-				double realItemsOfNumber = numberDouble - intPartOfNumber;
-				int realPathOfNumber = realItemsOfNumber * 10000;
-				string intPathString = toString(numberDouble, intPartOfNumber);
-				string realPathString = toString(numberDouble, realPathOfNumber);
-				string stringNumberDouble = intPathString + "." + realPathString;
-				cout << stringNumberDouble << endl;
-				break;
-			case 3:
-				do {
-					cout << "Enter a number: ";
-					numberInt = inputNumber();
-				} while (numberInt > 999999999);
-				cout << "Enter a number of elements: ";
-				int numberOfPrintElements = inputNumber();
-				string number = toString(numberInt, numberOfPrintElements);
-				cout << number << "\n";
-				break;
-			case 4:
-				cout << "Enter a number: ";
-				int number = inputNumber();
-				int amount, counterRec;
-				int* array = buildArray(amount);
-				numberOfMeetingsNumbers(number, array, amount);
-				break;
-			case 5:
-				/*cout << "Enter a number: ";
-				int number = inputNumber();
-				int amount, counterRec;
-				int* array = buildArray(amount);
-				string line = buildString(array, amount);
-				cout << endl << line;
-				numberOfMeetingsNumbers(number, line);*/
-				break;
-			default:
-				cout << "Вы можете использовать только 0-5! Попробуйте снова\n";
-			}
+				numberInt = inputNumber();
+			} while (numberInt > 999999999);
+			string number = toString(numberInt);
+			cout << number << "\n";
+			break;
 		}
+		case 2:
+		{
+			cout << "Enter a number: ";
+			cin >> numberDouble;
+			int intPartOfNumber = numberDouble;
+			double realItemsOfNumber = numberDouble - intPartOfNumber;
+			int realPathOfNumber = realItemsOfNumber * 10000;
+			string intPathString = toString(numberDouble, intPartOfNumber);
+			string realPathString = toString(numberDouble, realPathOfNumber);
+			string stringNumberDouble = intPathString + "." + realPathString;
+			cout << stringNumberDouble << endl;
+			break;
+		}
+		case 3:
+		{
+			do {
+				cout << "Enter a number: ";
+				numberInt = inputNumber();
+			} while (numberInt > 999999999);
+			cout << "Enter a number of elements: ";
+			int numberOfPrintElements = inputNumber();
+			string number = toString(numberInt, numberOfPrintElements);
+			cout << number << "\n";
+			break;
+		}
+		case 4:
+		{
+			cout << "Enter a number: ";
+			int number = inputNumber();
+			int amount, counterRec;
+			int* array = buildArray(amount);
+			numberOfMeetingsNumbers(number, array, amount);
+			break;
+		}
+		case 5:
+			/*cout << "Enter a number: ";
+			int number = inputNumber();
+			int amount, counterRec;
+			int* array = buildArray(amount);
+			string line = buildString(array, amount);
+			cout << endl << line;
+			numberOfMeetingsNumbers(number, line);*/
+			break;
+		default:
+			cout << "Вы можете использовать только 0-5! Попробуйте снова\n";
+			break;
+		}
+		
 	}
 	system("pause");
 	return 0;
