@@ -3,6 +3,9 @@
 #include <string>
 using namespace std;
 
+const string messageForMenu = "-1- int to string\n-2- double to string\n-3- translation of several elements of a number to string\n-4- number of rec by arrays\n-5- number of rec by string\n-0- EXIT \n Your choise: ";
+
+
 bool isNumberNumeric()
 {
 	if (cin.get() == '\n')
@@ -124,42 +127,9 @@ string toString(double numberDouble, int intPartOfNumber)
 		array[i] = oneSymbol;
 		i++;
 	}
-	for (int i = numberOfElements - 1; i > -1; --i)
+	for (int i = numberOfElements - 1; i >= 0; --i)
 	{
-		int item = array[i];
-		switch (item)
-		{
-		case 0:
-			line += "0";
-			break;
-		case 1:
-			line += "1";
-			break;
-		case 2:
-			line += "2";
-			break;
-		case 3:
-			line += "3";
-			break;
-		case 4:
-			line += "4";
-			break;
-		case 5:
-			line += "5";
-			break;
-		case 6:
-			line += "6";
-			break;
-		case 7:
-			line += "7";
-			break;
-		case 8:
-			line += "8";
-			break;
-		case 9:
-			line += "9";
-			break;
-		}
+		line += (char)array[i] + 48;
 	}
 
 	delete[] array;
@@ -191,40 +161,7 @@ string toString(int numberInt)
 	}
 	for (int i = numberOfElements - 1; i > -1; --i)
 	{
-		int item = array[i];
-		switch (item)
-		{
-		case 0:
-			line += "0";
-			break;
-		case 1:
-			line += "1";
-			break;
-		case 2:
-			line += "2";
-			break;
-		case 3:
-			line += "3";
-			break;
-		case 4:
-			line += "4";
-			break;
-		case 5:
-			line += "5";
-			break;
-		case 6:
-			line += "6";
-			break;
-		case 7:
-			line += "7";
-			break;
-		case 8:
-			line += "8";
-			break;
-		case 9:
-			line += "9";
-			break;
-		}
+		line += (char)array[i] + 48;
 	}
 	
 	delete[] array;
@@ -235,68 +172,11 @@ string toString(int numberInt)
 string toString(int numberInt, int numberOfPrintElements)
 {
 	int numberOfElements = 1, numberForSimbol, i = 0;
-	string line;
-	if (numberInt < 0)
-	{
-		line += "-";
-		numberInt *= -1;
-	}
-	short oneSymbol;
-	numberForSimbol = numberInt;
-	int numberForLenght = numberInt;
-	while ((numberForLenght /= 10) > 0)
-		numberOfElements++;
-	int* array = new int[numberOfElements];
-
-	while (numberInt >= 1)
-	{
-		oneSymbol = numberInt % 10;
-		numberInt = numberInt / 10;
-		array[i] = oneSymbol;
-		i++;
-	}
-	for (int i = numberOfElements - 1; i > -1; --i)
-	{
-		int item = array[i];
-		switch (item)
-		{
-		case 0:
-			line += "0";
-			break;
-		case 1:
-			line += "1";
-			break;
-		case 2:
-			line += "2";
-			break;
-		case 3:
-			line += "3";
-			break;
-		case 4:
-			line += "4";
-			break;
-		case 5:
-			line += "5";
-			break;
-		case 6:
-			line += "6";
-			break;
-		case 7:
-			line += "7";
-			break;
-		case 8:
-			line += "8";
-			break;
-		case 9:
-			line += "9";
-			break;
-		}
-	}
+	string line = toString(numberInt);
 	string lineTrimed;
 	for (int i = 0; i < numberOfPrintElements; i++)
 		lineTrimed += line[i];
 	line = lineTrimed;
-	delete[] array;
 	return line;
 }
 
@@ -359,18 +239,8 @@ int main()
 	double numberDouble;
 	int toggle = -1;
 	while (true) {
-		do {
-			cout << "________________________________________________________________________________________________________________________\n"
-				<< "-1- int to string\n"
-				<< "-2- double to string\n"
-				<< "-3- translation of several elements of a number to string\n"
-				<< "-4- number of rec by arrays\n"
-				<< "-5- number of rec by string\n"
-				<< "-0- EXIT" << endl << "Your choise: ";
-			toggle = inputNumber();
-			if (toggle > 5 || toggle < 0)
-				cout << "You can use only 0-5! To exit press 0\n";
-		} while (toggle > 5 || toggle < 0);
+		cout << messageForMenu;
+		toggle = inputNumber();
 		cout << "\n";
 		if (toggle == 0)
 			return 0;
