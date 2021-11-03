@@ -1,78 +1,11 @@
 ﻿  TRPO_5PZ.cpp
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(356,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(382,6): error C2059: синтаксическая ошибка: do
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(382,9): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(392,25): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(394,26): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(407,12): error C2374: number: переопределение; множественная инициализация
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(386): message : см. объявление "number"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(412,9): error C2371: number: переопределение; различные базовые типы
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(386): message : см. объявление "number"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(389,4): error C2360: пропуск инициализации "number" из-за метки "case"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(386): message : см. объявление "number"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(400,4): error C2360: пропуск инициализации "stringNumberDouble" из-за метки "case"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(397): message : см. объявление "stringNumberDouble"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(400,4): error C2360: пропуск инициализации "realPathString" из-за метки "case"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(396): message : см. объявление "realPathString"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(400,4): error C2360: пропуск инициализации "intPathString" из-за метки "case"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(395): message : см. объявление "intPathString"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(400,4): error C2360: пропуск инициализации "realPathOfNumber" из-за метки "case"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(394): message : см. объявление "realPathOfNumber"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(400,4): error C2360: пропуск инициализации "realItemsOfNumber" из-за метки "case"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(393): message : см. объявление "realItemsOfNumber"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(400,4): error C2360: пропуск инициализации "intPartOfNumber" из-за метки "case"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(392): message : см. объявление "intPartOfNumber"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(400,4): error C2360: пропуск инициализации "number" из-за метки "case"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(386): message : см. объявление "number"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(410,4): error C2360: пропуск инициализации "number" из-за метки "case"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(407): message : см. объявление "number"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(410,4): error C2360: пропуск инициализации "numberOfPrintElements" из-за метки "case"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(406): message : см. объявление "numberOfPrintElements"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(410,4): error C2360: пропуск инициализации "stringNumberDouble" из-за метки "case"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(397): message : см. объявление "stringNumberDouble"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(410,4): error C2360: пропуск инициализации "realPathString" из-за метки "case"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(396): message : см. объявление "realPathString"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(410,4): error C2360: пропуск инициализации "intPathString" из-за метки "case"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(395): message : см. объявление "intPathString"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(410,4): error C2360: пропуск инициализации "realPathOfNumber" из-за метки "case"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(394): message : см. объявление "realPathOfNumber"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(410,4): error C2360: пропуск инициализации "realItemsOfNumber" из-за метки "case"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(393): message : см. объявление "realItemsOfNumber"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(410,4): error C2360: пропуск инициализации "intPartOfNumber" из-за метки "case"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(392): message : см. объявление "intPartOfNumber"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(417,4): error C2360: пропуск инициализации "array" из-за метки "case"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(414): message : см. объявление "array"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(417,4): error C2360: пропуск инициализации "number" из-за метки "case"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(412): message : см. объявление "number"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(417,4): error C2360: пропуск инициализации "numberOfPrintElements" из-за метки "case"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(406): message : см. объявление "numberOfPrintElements"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(417,4): error C2360: пропуск инициализации "stringNumberDouble" из-за метки "case"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(397): message : см. объявление "stringNumberDouble"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(417,4): error C2360: пропуск инициализации "realPathString" из-за метки "case"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(396): message : см. объявление "realPathString"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(417,4): error C2360: пропуск инициализации "intPathString" из-за метки "case"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(395): message : см. объявление "intPathString"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(417,4): error C2360: пропуск инициализации "realPathOfNumber" из-за метки "case"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(394): message : см. объявление "realPathOfNumber"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(417,4): error C2360: пропуск инициализации "realItemsOfNumber" из-за метки "case"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(393): message : см. объявление "realItemsOfNumber"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(417,4): error C2360: пропуск инициализации "intPartOfNumber" из-за метки "case"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(392): message : см. объявление "intPartOfNumber"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(426,4): error C2361: пропуск инициализации "array" из-за метки "default"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(414): message : см. объявление "array"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(426,4): error C2361: пропуск инициализации "number" из-за метки "default"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(412): message : см. объявление "number"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(426,4): error C2361: пропуск инициализации "numberOfPrintElements" из-за метки "default"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(406): message : см. объявление "numberOfPrintElements"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(426,4): error C2361: пропуск инициализации "stringNumberDouble" из-за метки "default"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(397): message : см. объявление "stringNumberDouble"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(426,4): error C2361: пропуск инициализации "realPathString" из-за метки "default"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(396): message : см. объявление "realPathString"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(426,4): error C2361: пропуск инициализации "intPathString" из-за метки "default"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(395): message : см. объявление "intPathString"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(426,4): error C2361: пропуск инициализации "realPathOfNumber" из-за метки "default"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(394): message : см. объявление "realPathOfNumber"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(426,4): error C2361: пропуск инициализации "realItemsOfNumber" из-за метки "default"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(393): message : см. объявление "realItemsOfNumber"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(426,4): error C2361: пропуск инициализации "intPartOfNumber" из-за метки "default"
-D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(392): message : см. объявление "intPartOfNumber"
+D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(169,28): warning C4101: numberForSimbol: неиспользованная локальная переменная
+D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(214,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(235,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(262,24): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(264,25): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(237,6): warning C4101: code: неиспользованная локальная переменная
+D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(237,12): warning C4101: numOfItems: неиспользованная локальная переменная
+D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(287,16): warning C4101: counterRec: неиспользованная локальная переменная
+D:\БГУИР\TRPO\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(297,16): warning C4101: counterRec: неиспользованная локальная переменная
+  TRPO_5PZ.vcxproj -> D:\БГУИР\TRPO\TRPO_5PZ\Debug\TRPO_5PZ.exe

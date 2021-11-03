@@ -158,7 +158,7 @@ string toString(int numberInt)
 	{
 		line += (char)array[i] + 48;
 	}
-
+	
 	delete[] array;
 	return line;
 }
