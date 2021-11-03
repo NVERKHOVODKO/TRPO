@@ -135,6 +135,13 @@ string toString(int numberInt)
 {
 	int numberOfElements = 1, numberForSimbol, i = 0;
 	string line;
+
+	if (numberInt == 0)
+	{
+		line = "0";
+		return line;
+	}
+
 	if (numberInt < 0)
 	{
 		line += "-";
@@ -200,7 +207,7 @@ string buildString(int* array, int amount)
 	for (int i = 0; i < amount; i++)
 	{
 		if (array[i] == 0)
-			line += '0';
+			line += "0";
 		line += toString(array[i]);
 		line += " ";
 	}
@@ -248,7 +255,7 @@ int main()
 		case 1:
 		{
 			do {
-				cout << "Enter a number: ";
+				cout << "Enter a integer number: ";
 				numberInt = inputNumber();
 			} while (numberInt > 999999999);
 			string number = toString(numberInt);
@@ -257,7 +264,7 @@ int main()
 		}
 		case 2:
 		{
-			cout << "Enter a number: ";
+			cout << "Enter a double number: ";
 			cin >> numberDouble;
 			int intPartOfNumber = numberDouble;
 			double realItemsOfNumber = numberDouble - intPartOfNumber;
@@ -271,7 +278,7 @@ int main()
 		case 3:
 		{
 			do {
-				cout << "Enter a number: ";
+				cout << "Enter a integer number: ";
 				numberInt = inputNumber();
 			} while (numberInt > 999999999);
 			cout << "Enter a number of elements which you want to print : ";
