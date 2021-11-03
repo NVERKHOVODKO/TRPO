@@ -4,6 +4,102 @@
 using namespace std;
 const string messageForMenu = "________________________________________________________________________________________________________________________\n-1- int to string\n-2- double to string\n-3- translation of several elements of a number to string\n-4- number of recurring by arrays\n-5- number of recurring by string\n-0- EXIT";
 
+bool isNumberNumeric();
+int inputNumber();
+void byKeyboard(int amount, int* array);
+void showArray(int amount, int* array);
+void byRandom(int amount, int* array);
+int* buildArray(int& amount);
+int* buildArray(int& amount);
+string toString(double numberDouble, int intPartOfNumber);
+string toString(int numberInt);
+string toString(int numberInt, int numberOfPrintElements);
+void numberOfMeetingsNumbers(int number, int* array, int amount);
+string buildString(int* array, int amount);
+void numberOfMeetingsNumbers(int number, string line);
+
+
+int main()
+{
+	srand(time(NULL));
+	setlocale(LC_ALL, "rus");
+	int code, numOfItems, numberInt;
+	double numberDouble;
+	int toggle = -1;
+	while (true) {
+		cout << messageForMenu << endl << "Your choise: ";
+		toggle = inputNumber();
+		cout << "\n";
+		if (toggle == 0)
+			return 0;
+		switch (toggle)
+		{
+		case 1:
+		{
+			do {
+				cout << "Enter a integer number: ";
+				numberInt = inputNumber();
+			} while (numberInt > 999999999);
+			string number = toString(numberInt);
+			cout << number << "\n";
+			break;
+		}
+		case 2:
+		{
+			cout << "Enter a double number: ";
+			cin >> numberDouble;
+			int intPartOfNumber = numberDouble;
+			double realItemsOfNumber = numberDouble - intPartOfNumber;
+			int realPathOfNumber = realItemsOfNumber * 10000;
+			string intPathString = toString(numberDouble, intPartOfNumber);
+			string realPathString = toString(numberDouble, realPathOfNumber);
+			string stringNumberDouble = intPathString + "." + realPathString;
+			cout << stringNumberDouble << endl;
+			break;
+		}
+		case 3:
+		{
+			do {
+				cout << "Enter a integer number: ";
+				numberInt = inputNumber();
+			} while (numberInt > 999999999);
+			cout << "Enter a number of elements which you want to print : ";
+			int numberOfPrintElements = inputNumber();
+			string number = toString(numberInt, numberOfPrintElements);
+			cout << number << "\n";
+			break;
+		}
+		case 4:
+		{
+			cout << "Enter a number: ";
+			int number = inputNumber();
+			int amount, counterRec;
+			int* array = buildArray(amount);
+			showArray(amount, array);
+			numberOfMeetingsNumbers(number, array, amount);
+			break;
+		}
+		case 5:
+		{
+			cout << "Enter a number: ";
+			int number = inputNumber();
+			int amount, counterRec;
+			int* array = buildArray(amount);
+			string line = buildString(array, amount);
+			cout << endl << line;
+			numberOfMeetingsNumbers(number, line);
+			break;
+		}
+		default:
+		{
+			cout << "Incorrect input!\nTry again: ";
+			break;
+		}
+		}
+	}
+	system("pause");
+	return 0;
+}
 bool isNumberNumeric()
 {
 	if (cin.get() == '\n')
@@ -41,6 +137,7 @@ void byKeyboard(int amount, int* array)
 		array[i] = inputNumber();
 	}
 }
+
 void showArray(int amount, int* array)
 {
 	for (int i = 0; i < amount; ++i)
@@ -235,84 +332,3 @@ void numberOfMeetingsNumbers(int number, string line)
 		cout << endl << "Number of recurring " << numberStr << " = " << counterOfRecElements << endl;
 }
 
-int main()
-{
-	srand(time(NULL));
-	setlocale(LC_ALL, "rus");
-	int code, numOfItems, numberInt;
-	double numberDouble;
-	int toggle = -1;
-	while (true) {
-		cout << messageForMenu << endl << "Your choise: ";
-		toggle = inputNumber();
-		cout << "\n";
-		if (toggle == 0)
-			return 0;
-		switch (toggle)
-		{
-		case 1:
-		{
-			do {
-				cout << "Enter a integer number: ";
-				numberInt = inputNumber();
-			} while (numberInt > 999999999);
-			string number = toString(numberInt);
-			cout << number << "\n";
-			break;
-		}
-		case 2:
-		{
-			cout << "Enter a double number: ";
-			cin >> numberDouble;
-			int intPartOfNumber = numberDouble;
-			double realItemsOfNumber = numberDouble - intPartOfNumber;
-			int realPathOfNumber = realItemsOfNumber * 10000;
-			string intPathString = toString(numberDouble, intPartOfNumber);
-			string realPathString = toString(numberDouble, realPathOfNumber);
-			string stringNumberDouble = intPathString + "." + realPathString;
-			cout << stringNumberDouble << endl;
-			break;
-		}
-		case 3:
-		{
-			do {
-				cout << "Enter a integer number: ";
-				numberInt = inputNumber();
-			} while (numberInt > 999999999);
-			cout << "Enter a number of elements which you want to print : ";
-			int numberOfPrintElements = inputNumber();
-			string number = toString(numberInt, numberOfPrintElements);
-			cout << number << "\n";
-			break;
-		}
-		case 4:
-		{
-			cout << "Enter a number: ";
-			int number = inputNumber();
-			int amount, counterRec;
-			int* array = buildArray(amount);
-			showArray(amount, array);
-			numberOfMeetingsNumbers(number, array, amount);
-			break;
-		}
-		case 5:
-		{
-			cout << "Enter a number: ";
-			int number = inputNumber();
-			int amount, counterRec;
-			int* array = buildArray(amount);
-			string line = buildString(array, amount);
-			cout << endl << line;
-			numberOfMeetingsNumbers(number, line);
-			break;
-		}
-		default:
-		{
-			cout << "Incorrect input!\nTry again: ";
-			break;
-		}
-		}
-	}
-	system("pause");
-	return 0;
-}
