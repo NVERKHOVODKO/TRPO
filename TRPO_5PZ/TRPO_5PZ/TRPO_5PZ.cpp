@@ -2,7 +2,7 @@
 #include <ctime>
 #include <string>
 using namespace std;
-const string messageForMenu = "________________________________________________________________________________________________________________________\n-1- int to string\n-2- double to string\n-3- translation of several elements of a number to string\n-4- number of rec by arrays\n-5- number of rec by string\n-0- EXIT";
+const string messageForMenu = "________________________________________________________________________________________________________________________\n-1- int to string\n-2- double to string\n-3- translation of several elements of a number to string\n-4- number of recurring by arrays\n-5- number of recurring by string\n-0- EXIT";
 
 bool isNumberNumeric()
 {
