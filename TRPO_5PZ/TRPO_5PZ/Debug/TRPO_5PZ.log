@@ -1,11 +1,11 @@
 ﻿  TRPO_5PZ.cpp
 D:\БГУИР\TRPO_Basic_Repository\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(176,28): warning C4101: numberForSimbol: неиспользованная локальная переменная
-D:\БГУИР\TRPO_Basic_Repository\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(221,20): warning C4018: <: несоответствие типов со знаком и без знака
-D:\БГУИР\TRPO_Basic_Repository\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(242,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-D:\БГУИР\TRPO_Basic_Repository\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(269,24): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
-D:\БГУИР\TRPO_Basic_Repository\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(271,25): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
-D:\БГУИР\TRPO_Basic_Repository\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(244,6): warning C4101: code: неиспользованная локальная переменная
-D:\БГУИР\TRPO_Basic_Repository\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(244,12): warning C4101: numOfItems: неиспользованная локальная переменная
-D:\БГУИР\TRPO_Basic_Repository\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(294,16): warning C4101: counterRec: неиспользованная локальная переменная
-D:\БГУИР\TRPO_Basic_Repository\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(304,16): warning C4101: counterRec: неиспользованная локальная переменная
+D:\БГУИР\TRPO_Basic_Repository\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(219,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\БГУИР\TRPO_Basic_Repository\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(240,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\БГУИР\TRPO_Basic_Repository\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(267,24): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+D:\БГУИР\TRPO_Basic_Repository\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(269,25): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+D:\БГУИР\TRPO_Basic_Repository\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(242,6): warning C4101: code: неиспользованная локальная переменная
+D:\БГУИР\TRPO_Basic_Repository\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(242,12): warning C4101: numOfItems: неиспользованная локальная переменная
+D:\БГУИР\TRPO_Basic_Repository\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(292,16): warning C4101: counterRec: неиспользованная локальная переменная
+D:\БГУИР\TRPO_Basic_Repository\TRPO_5PZ\TRPO_5PZ\TRPO_5PZ.cpp(302,16): warning C4101: counterRec: неиспользованная локальная переменная
   TRPO_5PZ.vcxproj -> D:\БГУИР\TRPO_Basic_Repository\TRPO_5PZ\Debug\TRPO_5PZ.exe

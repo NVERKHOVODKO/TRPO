@@ -206,8 +206,6 @@ string buildString(int* array, int amount)
 	string line;
 	for (int i = 0; i < amount; i++)
 	{
-		if (array[i] == 0)
-			line += "0";
 		line += toString(array[i]);
 		line += " ";
 	}
