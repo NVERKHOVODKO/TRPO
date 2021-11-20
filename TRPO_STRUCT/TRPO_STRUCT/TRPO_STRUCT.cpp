@@ -80,7 +80,7 @@ int main()
 				do {
 					cout << "Try again: ";
 					choise = inputNumber();
-				} while (choise != 1 && choise != 0);
+				} while (choise != 2 && choise != 1 && choise != 0);
 			}
 		}
 		switch (choise)
@@ -414,7 +414,7 @@ void editData(Students* array, int amountOfStudents)
 	cin >> array[i].name;
 	cout << "\nEnter a secondname: ";
 	cin >> array[i].secondname;
-	cout << "\nEnter a patronymic: ";
+	cout << "\nEnter a patronymic: "; 
 	cin >> array[i].patronymic;
 	do {
 		cout << endl;
