@@ -1,5 +1,5 @@
 ﻿  TRPO2PZ.cpp
-D:\БГУИР\TRPO_Basic_Repository\TRPO2PZ\TRPO2PZ\TRPO2PZ.cpp(388,12): warning C4101: columnIndex: неиспользованная локальная переменная
-D:\БГУИР\TRPO_Basic_Repository\TRPO2PZ\TRPO2PZ\TRPO2PZ.cpp(388,25): warning C4101: lineIndex: неиспользованная локальная переменная
-D:\БГУИР\TRPO_Basic_Repository\TRPO2PZ\TRPO2PZ\TRPO2PZ.cpp(521,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-  TRPO2PZ.vcxproj -> D:\БГУИР\TRPO_Basic_Repository\TRPO2PZ\Debug\TRPO2PZ.exe
+D:\БГУИР\TRPO_Basic_Repository\TRPO4PZ\TRPO2PZ\TRPO2PZ.cpp(388,12): warning C4101: columnIndex: неиспользованная локальная переменная
+D:\БГУИР\TRPO_Basic_Repository\TRPO4PZ\TRPO2PZ\TRPO2PZ.cpp(388,25): warning C4101: lineIndex: неиспользованная локальная переменная
+D:\БГУИР\TRPO_Basic_Repository\TRPO4PZ\TRPO2PZ\TRPO2PZ.cpp(521,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  TRPO2PZ.vcxproj -> D:\БГУИР\TRPO_Basic_Repository\TRPO4PZ\Debug\TRPO2PZ.exe
