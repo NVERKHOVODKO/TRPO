@@ -18,7 +18,7 @@ const string NAME4 = "Victor";
 const string NAME5 = "lisa";
 const string NAME6 = "Oleg";
 const string NAME7 = "Egor";
-const string NAME8 = "Tania";
+const string NAME8 = "Igor";
 const string PATRONOMIC1 = "Viacheslavovich ";
 const string PATRONOMIC2 = "Alexandrovich";
 const string PATRONOMIC3 = "Andreevna";
@@ -298,7 +298,7 @@ int AgeOfStudent(Students* array, int i)
 	int yearAge, monthAge;
 	yearAge = year - array[i].Empl.yearOfBirth;
 	monthAge = month - array[i].Empl.mounthOfBirth;
-	if (monthAge < 0)
+	if (monthAge > 0)
 		yearAge--;
 	return 2021 + yearAge;
 }

@@ -1,3 +1,3 @@
 ﻿  TRPO_STRUCT.cpp
-D:\БГУИР\TRPO\TRPO_STRUCT\TRPO_STRUCT\TRPO_STRUCT.cpp(69,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-  TRPO_STRUCT.vcxproj -> D:\БГУИР\TRPO\TRPO_STRUCT\Debug\TRPO_STRUCT.exe
+D:\БГУИР\TRPO_Basic_Repository\TRPO_STRUCT\TRPO_STRUCT\TRPO_STRUCT.cpp(69,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  TRPO_STRUCT.vcxproj -> D:\БГУИР\TRPO_Basic_Repository\TRPO_STRUCT\Debug\TRPO_STRUCT.exe
