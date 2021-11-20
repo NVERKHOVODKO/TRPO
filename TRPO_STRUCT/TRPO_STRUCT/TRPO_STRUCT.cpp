@@ -383,7 +383,7 @@ string mostPopularName(Students* array, int amountOfStudents)
 
 void showData(Students* array, int amountOfStudents)
 {
-	cout << setw(3) << "Num" << setw(15) << "          NAME             Birth       Group   Math   Phys   Inform   Chem   Medium   Age" << endl;
+	cout << setw(3) << "Num" << setw(15) << "          NAME             Birth       Group   Math   Phys   Inform   Chem   Average   Age" << endl;
 	for (int i = 0; i < amountOfStudents; i++)
 	{
 		string name = array[i].name;
